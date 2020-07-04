@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Titillium+Web");
+@font-face {
+	font-family: 'FonteLogo';
+	src: url ("../_fonts/bubblegum-sans-regular.otf");
+}
+	
+body {
+	background-color: white;
+	color: rgba (0,0,0,1);
+	font-family: Arial, sans-serif;
+}
+
+div#interface {
+	width: 1000px;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+a {
+	color: #606060;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 1000px;
+	top: 70px;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30px;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15px;
+	color: #888;
+	padding: 0px;
+	margin-top: 0px;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+	border:8px solid white;
+	box-shadow: 1px 1px 4px black;
+	position:relative;
+}
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption {
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: withe;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/*Formatação do Menu*/
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 530px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #ddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-webkit-transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	color: #000;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #fff;
+}
+
+section#corpo {
+	display: block;
+	width: 600px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
+article#noticiaprincipal h2 {
+	font-size: 13px;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalhoartigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20px;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalhoartigo h2 {
+	font-size: 13px;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+header#cabecalhoartigo h3 {
+	font-size: 12px;
+	color: #606060;
+}
+
+.direita {
+	text-align: right;
+}
+
+table#tabelaespec {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaespec td {
+	border: 1px solid #606060;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#tabelaespec td.ce {
+	color: #fff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+	text-align: right;
+}
+
+table#tabelaespec td.cd {
+	background-color: #cecece;
+	text-align: left;
+}
+
+table#tabelaespec caption {
+	color: #888;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+table#tabelaespec caption span {
+	display: block;
+	float: right;
+	font: #000;
+	font-size: 8px;
+	margin-top: 10px;
+}
+
+aside#lateral {
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	margin: 10px;
+	padding: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+	font-family: 'FonteLogo';
+	font-size: 20px;
+	color: #606060;
+	margin-top: 0px;
+}
+
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13px;
+	color: #ffffff;
+	padding: 5px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+	text-align: center;
+} 
