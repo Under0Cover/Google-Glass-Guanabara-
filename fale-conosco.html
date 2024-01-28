@@ -8,13 +8,6 @@
 		<link rel="stylesheet" href="_css/form.css"/>
 	</head>
 		<script language="javascript" src="_javascript/funcoes.js"></script>
-		<script> 
-			function calc_total(){
-			var qtd = parseInt(document.getElementById('cQtd').value);
-			tot = qtd * 1500;
-			document.getElementById('cTot').value = tot;
-		}
-		</script>
 	<body>
 		<div id="interface">
 			<header id="cabecalho">
@@ -42,11 +35,10 @@
 							<h3>Fale Conosco > Contato</h3>
 							<h1>Formulário de Contato</h1>
 							<h2>por Tales Oliver</h2>
-							<h3>Atualizado em 23/Fevereiro/2020</h3>
+							<h3>Atualizado em 28/janeiro/2024</h3>
 						</hgroup>
 					</header>
-
-					<form method="post" id="fContato" action="mailto:talis.oliveira@hotmail.com.br" oninput="cal_total();">
+					<form method="post" id="fContato" action="mailto:talis.oliveira@hotmail.com.br">
 						<fieldset id="usuario">
 							<legend>Identificação do Usuário</legend>
 							<p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="25" maxlength="30" placeholder="Nome Completo"/></p>
@@ -109,14 +101,14 @@
 						<fieldset id="mensagem">
 							<legend>Mensagem do Usuário</legend>
 							<p><label for="cUrg">Grau de Urgência:</label>Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
-							<p><label for ="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="50" rows="5" placeholder="Deixe aqui a sua mensagem"/></textarea></p>
+							<p><label for ="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="50" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea></p>
 						</fieldset>
 
 						<fieldset id="comprar">
 							<legend>Quero um Google Glass</legend>
 							<p><input type="checkbox" name="tPed" id="cPed" checked/><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-							<p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#0000FF"</p>
-							<p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="99"	/></p>
+							<p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#0000FF"></p>
+							<p oninput="calc_total();"><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="0" max="99"	/></p>
 							<p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot"id="cTot" placeholder="Total a Pagar"readonly /></p>
 						</fieldset>
 
@@ -126,8 +118,12 @@
 				</article>
 			</section>
 			<footer id="rodape">
-				<p>Copyright&copy; 2020 - by Oliver <br/>
-				<a href="https://facebook.com/o.tales.oliver" target=_blank>Facebook</a> | <a href="https://twitter.com/Oliver_Cover" target=_blank>Twitter</a> | <a href="https://github.com/Under0Cover" target=_blank>GitHub</a></p>
+				<p>
+					Copyright&copy; 2020 - by Oliver <br/>
+					<a href="https://facebook.com/o.tales.oliver" target=_blank>Facebook</a> | 
+					<a href="https://twitter.com/Oliver_Cover" target=_blank>Twitter</a> | 
+					<a href="https://github.com/Under0Cover" target=_blank>GitHub</a>
+				</p>
 			</footer>
 		</div>
 	</body>
